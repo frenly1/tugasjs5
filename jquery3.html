@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHandler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div1">
+        <audio id="sound1" class="music" src="amran.mp3"></audio>
+        hewan </div>
+    </div>
+    <div id="div2">
+        <audio id="sound2" class="music"  src="beko.mp3"></audio>
+        Hewan </div>
+    <div id="div3">
+        <audio id="sound3" class="music"  src="kucn.mp3"></audio>
+        Hewan </div>
+        <script src="./js/jquery-3.7.1.js"></script>
+        <script>
+            $("document").ready(function(){
+                //div 1
+                $("#div1").mouseover(function(){
+                    $(this).css({
+                        background : "URL('https://media.istockphoto.com/id/464988959/id/foto/bebek-mallard-di-latar-belakang-putih.jpg?s=612x612&w=0&k=20&c=9YxNi_vnW5URx8_EFiX3fgDtMLocqPu-Bq1n_Bmq75Q=')",
+                        "background-repeat" : "no-repeat", 
+                        "background-size" : "cover",
+                        "background-position" : "center"
+                    })
+                    document.getElementById("sound1").play();
+                });
+                
+                $("div").mouseout(function(){
+                    $(this).css({
+                        background : "green"
+                    });
+    
+                    document.getElementById("sound1").pause();
+                    document.getElementById("sound2").pause();
+                    document.getElementById("sound3").pause();
+                })
+    
+                $("#div2").mouseover(function(){
+                    $(this).css({
+                        background : "URL('https://cdn0-production-images-kly.akamaized.net/RSJiUQ3Ok0upsiB1Oo5If0Np6AM=/1200x900/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4219701/original/009682100_1667963905-GettyImages-1068070022-cc640df4be4d4c3a8b4356f76beeee60.jpg')",
+                        "background-repeat" : "no-repeat", 
+                        "background-size" : "cover",
+                        "background-position" : "center"
+                     })
+                     document.getElementById("sound2").play();
+                });
+    
+                $("#div3").mouseover(function(){
+                    $(this).css({
+                        background : "URL('https://awsimages.detik.net.id/community/media/visual/2022/02/04/ayam-betina.jpeg?w=600&q=90')",
+                        "background-repeat" : "no-repeat", 
+                        "background-size" : "cover",
+                        "background-position" : "center"
+                    })
+                    document.getElementById("sound3").play();
+                });
+            })
+        </script>
+</body>
+</html>

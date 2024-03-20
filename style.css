@@ -1,0 +1,39 @@
+/* style.css */
+
+/* margin padding */
+body, h1, h2, h3, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Setting*/
+body {
+    background-color: #f0f0f0; /* Light gray */
+}
+
+/* Styling  */
+#div1, #div2, #div3 {
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+    padding: 10px;
+    background-color: green; /* enter */
+    border: 1px solid #ccc; /* enter */
+    border-radius: 5px; /* b*/
+    text-align: center; /* Center*/
+    cursor: pointer; /* Center */
+    overflow: hidden; /* enter*/
+}
+
+/* Styling */
+.music {
+    display: none; /* none */
+}
+
+/* bagus*/
+#div1, #div2, #div3 {
+    color: #fff; /* bat*/
+    font-size: 24px; /* size*/
+    line-height: 150px; /* enter */
+}
+
